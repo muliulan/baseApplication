@@ -1,2 +1,4 @@
 rootProject.name='baseApplication'
 include ':app'
+include ':library-base'
+include ':buildSrc'
