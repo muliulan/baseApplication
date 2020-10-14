@@ -9,5 +9,7 @@
 /app/build
 */src/test
 */src/androidTest
+*/*/src/test
+*/*/src/androidTest
 /gradle
 .idea

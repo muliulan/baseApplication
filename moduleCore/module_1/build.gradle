@@ -1,0 +1,11 @@
+apply from: "../../module.build.gradle"
+android {
+    defaultConfig {
+    }
+
+}
+
+dependencies {
+    api project(path: ":library-base")
+}
+

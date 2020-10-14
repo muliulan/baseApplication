@@ -1,7 +1,7 @@
+apply plugin: 'com.github.dcendents.android-maven' //发布需要加的
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 29
@@ -28,13 +28,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.core:core-ktx:1.3.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    api Config.depConfig.library_base.androidx.appcompat
+    api Config.depConfig.library_base.androidx.core_ktx
+    api Config.depConfig.library_base.androidx.constraintlayout
+    api Config.depConfig.library_base.androidx.junit
+    api Config.depConfig.library_base.androidx.espresso
+    api Config.depConfig.library_base.junit
+    api Config.depConfig.library_base.kotlin_stdlib_jdk7
 
+    api Config.depConfig.library_base.glide
+//    api Config.depConfig.library_base.glide_transformations
+    api Config.depConfig.library_base.utilcode
+    api Config.depConfig.library_base.BaseRecyclerViewAdapter
 
 }
