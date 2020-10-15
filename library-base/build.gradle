@@ -36,6 +36,14 @@ dependencies {
     api Config.depConfig.library_base.androidx.espresso
     api Config.depConfig.library_base.junit
     api Config.depConfig.library_base.kotlin_stdlib_jdk7
+    api Config.depConfig.library_base.kotlinx_coroutines
+    api Config.depConfig.library_base.netWork.retrofit2
+    api Config.depConfig.library_base.netWork.converter_gson
+    api Config.depConfig.library_base.netWork.gson
+    api Config.depConfig.library_base.netWork.rxjava
+    api Config.depConfig.library_base.netWork.rxandroid
+    api Config.depConfig.library_base.lifecycle.viewmodel
+    api Config.depConfig.library_base.lifecycle.extensions
 
     api Config.depConfig.library_base.glide
 //    api Config.depConfig.library_base.glide_transformations
