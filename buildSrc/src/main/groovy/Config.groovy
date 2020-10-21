@@ -30,9 +30,10 @@ class Config {
                             core_ktx        : 'androidx.core:core-ktx:1.3.2',
                             constraintlayout: 'androidx.constraintlayout:constraintlayout:2.0.2',
                             junit           : 'androidx.test.ext:junit:1.1.2',
-                            espresso        : 'androidx.test.espresso:espresso-core:3.3.0'
+                            espresso        : 'androidx.test.espresso:espresso-core:3.3.0',
 
                     ],
+                    material               : "com.google.android.material:material:1.2.0-alpha06",
                     junit                  : 'junit:junit:4.12',
                     kotlin_stdlib_jdk7     : 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version',
                     kotlinx_coroutines     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1",
@@ -47,7 +48,17 @@ class Config {
                             viewmodel : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0",
                             extensions: 'androidx.lifecycle:lifecycle-extensions:2.0.0',
                     ],
-
+                    navigation             : [
+                            navigation_ui      : 'androidx.navigation:navigation-ui-ktx:2.3.0-alpha05',
+                            navigation_fragment: 'androidx.navigation:navigation-fragment-ktx:2.3.0-alpha05',
+                            navigation_dynamic : 'androidx.navigation:navigation-dynamic-features-fragment:2.3.0-alpha05',
+                    ],
+                    kodein_di              : 'org.kodein.di:kodein-di-generic-jvm:6.5.5',
+                    kodein_di_framework    : 'org.kodein.di:kodein-di-framework-android-x:6.5.5',
+                    multidex               : 'com.android.support:multidex:1.0.1',
+                    pager_bottom           : 'me.majiajie:pager-bottom-tab-strip:2.3.0X',
+                    viewpager2             : 'androidx.viewpager2:viewpager2:1.0.0',
+                    mmkv                   : 'com.tencent:mmkv:1.0.23',
 
             ],
 

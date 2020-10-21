@@ -24,6 +24,11 @@ android {
         }
     }
 
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
 }
 
 dependencies {
@@ -35,19 +40,35 @@ dependencies {
     api Config.depConfig.library_base.androidx.junit
     api Config.depConfig.library_base.androidx.espresso
     api Config.depConfig.library_base.junit
+
     api Config.depConfig.library_base.kotlin_stdlib_jdk7
     api Config.depConfig.library_base.kotlinx_coroutines
+
     api Config.depConfig.library_base.netWork.retrofit2
     api Config.depConfig.library_base.netWork.converter_gson
     api Config.depConfig.library_base.netWork.gson
     api Config.depConfig.library_base.netWork.rxjava
     api Config.depConfig.library_base.netWork.rxandroid
+
     api Config.depConfig.library_base.lifecycle.viewmodel
     api Config.depConfig.library_base.lifecycle.extensions
+
+    api Config.depConfig.library_base.navigation.navigation_ui
+    api Config.depConfig.library_base.navigation.navigation_fragment
+    api Config.depConfig.library_base.navigation.navigation_dynamic
+
+    api Config.depConfig.library_base.kodein_di
+    api Config.depConfig.library_base.kodein_di_framework
+    api Config.depConfig.library_base.multidex
+    api Config.depConfig.library_base.pager_bottom
 
     api Config.depConfig.library_base.glide
 //    api Config.depConfig.library_base.glide_transformations
     api Config.depConfig.library_base.utilcode
     api Config.depConfig.library_base.BaseRecyclerViewAdapter
+    api Config.depConfig.library_base.viewpager2
+
+    api Config.depConfig.library_base.material
+    api Config.depConfig.library_base.mmkv
 
 }

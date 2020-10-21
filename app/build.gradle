@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion Config.compileSdkVersion
@@ -12,7 +13,7 @@ android {
         targetSdkVersion Config.targetSdkVersion
         versionCode Config.versionCode
         versionName Config.versionName
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -22,11 +23,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation project(':moduleCore:module_1')
+    implementation project(':moduleCore:module1')
+    implementation project(':moduleCore:module2')
+    implementation project(':moduleCore:module3')
+//    api project(path: ":library-base")
+
 }

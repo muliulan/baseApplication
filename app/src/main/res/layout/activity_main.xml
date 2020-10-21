@@ -4,16 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
 
     <TextView
-        android:id="@+id/tv_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tv"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mVp"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/mNav"
+        app:layout_constraintTop_toBottomOf="@+id/tv"/>
+
+    <me.majiajie.pagerbottomtabstrip.PageNavigationView
+        android:id="@+id/mNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <!--    <fragment-->
+    <!--        android:id="@+id/navHostFragment"-->
+    <!--        android:name="androidx.navigation.dynamicfeatures.fragment.DynamicNavHostFragment"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:defaultNavHost="true"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/bottomNav"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:navGraph="@navigation/module1_nav_graph" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:background="#000"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottomNav"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        app:itemIconTint="@drawable/bottom_nav_colors"-->
+    <!--        app:itemTextColor="@drawable/bottom_nav_colors"-->
+    <!--        app:labelVisibilityMode="labeled"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/navHostFragment"-->
+    <!--        app:menu="@menu/bottom_nav_menu" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

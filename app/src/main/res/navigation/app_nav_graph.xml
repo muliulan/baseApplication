@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/framnt1"
+    tools:ignore="UnusedNavigation">
+
+    <include-dynamic
+        android:id="@+id/framnt1"
+        app:graphResName="module1_nav_graph"
+        app:moduleName="module1">
+    </include-dynamic>
+
+    <include-dynamic
+        android:id="@+id/framnt2"
+        app:graphResName="module2_nav_graph"
+        app:moduleName="module2"/>
+
+    <include-dynamic
+        android:id="@+id/framnt3"
+        app:graphResName="module3_nav_graph"
+        app:moduleName="module3"/>
+
+</navigation>
