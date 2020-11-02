@@ -7,7 +7,7 @@ class Config {
     static targetSdkVersion = 29
     static versionCode = 1
     static versionName = "1.0"
-    static kotlin_version = '1.3.72'
+    static kotlin_version = '1.4.0'
 
     static isBuildModule = false
 
@@ -37,6 +37,7 @@ class Config {
                     junit                  : 'junit:junit:4.12',
                     kotlin_stdlib_jdk7     : 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version',
                     kotlinx_coroutines     : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1",
+
                     netWork                : [
                             retrofit2     : 'com.squareup.retrofit2:retrofit:2.5.0',
                             converter_gson: 'com.squareup.retrofit2:converter-gson:2.0.2',

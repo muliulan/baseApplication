@@ -49,7 +49,9 @@ class MainActivity : BaseActivity(R.layout.activity_main) {
                 null
             )
         )
+
         return normalItemView
     }
+
 }
 

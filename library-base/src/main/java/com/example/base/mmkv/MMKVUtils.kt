@@ -16,7 +16,7 @@ object MMKVUtils {
         kv = MMKV.defaultMMKV()
     }
 
-      fun put(@MmkvKey.Mkey key: String?, v: Any) {
+      fun put(key: String?, v: Any) {
         when (v) {
             is String -> {
                 kv?.encode(key, v)
